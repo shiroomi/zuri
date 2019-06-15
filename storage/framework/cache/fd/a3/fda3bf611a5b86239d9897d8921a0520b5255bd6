@@ -1,0 +1,75 @@
+1560605817a:1:{s:21:"underConstruction.htm";a:9:{s:8:"fileName";s:21:"underConstruction.htm";s:7:"content";s:1043:"title = "Under Constraction"
+url = "/underConstraction"
+layout = "default"
+is_hidden = 0
+==
+<!-- Home Section -->
+  <section class="page-section bg-dark-alfa-50 parallax-3" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
+  <div class="js-height-full">
+
+    <!-- Hero Content -->
+    <div class="home-content container">
+      <div class="home-text">
+        <div class="hs-cont">
+
+          <!-- Headings -->
+          <div class="hs-wrap">
+
+            <div class="hs-line-12 font-alt mb-10">
+              Sorry
+            </div>
+
+            <div class="hs-line-6 no-transp font-alt mb-40">
+              We are currently under construction!
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi urna, vehicula aliquam dapibus ornare, semper semper nisl.
+            </p>
+
+          </div>
+          <!-- End Headings -->
+
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Content -->
+
+  </div>
+</section>
+<!-- End Home Section -->
+";s:5:"mtime";i:1560537825;s:6:"markup";s:950:"<!-- Home Section -->
+  <section class="page-section bg-dark-alfa-50 parallax-3" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
+  <div class="js-height-full">
+
+    <!-- Hero Content -->
+    <div class="home-content container">
+      <div class="home-text">
+        <div class="hs-cont">
+
+          <!-- Headings -->
+          <div class="hs-wrap">
+
+            <div class="hs-line-12 font-alt mb-10">
+              Sorry
+            </div>
+
+            <div class="hs-line-6 no-transp font-alt mb-40">
+              We are currently under construction!
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi urna, vehicula aliquam dapibus ornare, semper semper nisl.
+            </p>
+
+          </div>
+          <!-- End Headings -->
+
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Content -->
+
+  </div>
+</section>
+<!-- End Home Section -->";s:4:"code";N;s:5:"title";s:18:"Under Constraction";s:3:"url";s:18:"/underConstraction";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
