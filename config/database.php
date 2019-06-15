@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
+            'host'      => 'remotemysql.com',
             'port'      => 3306,
-            'database'  => 'october',
-            'username'  => 'root',
-            'password'  => 'october',
+            'database'  => 'BAP3QVJQTy',
+            'username'  => 'BAP3QVJQTy',
+            'password'  => 'RAgBCTQJhO',
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
