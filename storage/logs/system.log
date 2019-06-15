@@ -1927,3 +1927,27 @@ Stack trace:
 #46 /Users/omi/Desktop/TEST/october/zuri/index.php(43): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #47 /Users/omi/.composer/vendor/laravel/valet/server.php(158): require('/Users/omi/Desk...')
 #48 {main}  
+[2019-06-15 13:09:49] development.ERROR: InvalidArgumentException: The "C:\xampp\htdocs\zuri\storage/cms/combiner" directory does not exist. in C:\xampp\htdocs\zuri\vendor\symfony\finder\Finder.php:546
+Stack trace:
+#0 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Filesystem\Filesystem.php(420): Symfony\Component\Finder\Finder->in('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(221): Illuminate\Filesystem\Filesystem->directories('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\zuri\modules\system\helpers\Cache.php(39): Illuminate\Support\Facades\Facade::__callStatic('directories', Array)
+#3 C:\xampp\htdocs\zuri\modules\system\helpers\Cache.php(24): System\Helpers\Cache->clearCombiner()
+#4 C:\xampp\htdocs\zuri\modules\system\helpers\Cache.php(18): System\Helpers\Cache::clearInternal()
+#5 C:\xampp\htdocs\zuri\modules\system\classes\UpdateManager.php(158): System\Helpers\Cache::clear()
+#6 C:\xampp\htdocs\zuri\modules\system\console\OctoberUp.php(35): System\Classes\UpdateManager->update()
+#7 [internal function]: System\Console\OctoberUp->handle()
+#8 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(29): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(87): Illuminate\Container\BoundMethod::Illuminate\Container\{closure}()
+#10 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php(31): Illuminate\Container\BoundMethod::callBoundMethod(Object(October\Rain\Foundation\Application), Array, Object(Closure))
+#11 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Container\Container.php(549): Illuminate\Container\BoundMethod::call(Object(October\Rain\Foundation\Application), Array, Array, NULL)
+#12 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Console\Command.php(183): Illuminate\Container\Container->call(Array)
+#13 C:\xampp\htdocs\zuri\vendor\symfony\console\Command\Command.php(264): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#14 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Console\Command.php(170): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#15 C:\xampp\htdocs\zuri\vendor\symfony\console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\zuri\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->doRunCommand(Object(System\Console\OctoberUp), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\zuri\vendor\symfony\console\Application.php(130): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Console\Application.php(88): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 C:\xampp\htdocs\zuri\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(121): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 C:\xampp\htdocs\zuri\artisan(35): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 {main}  

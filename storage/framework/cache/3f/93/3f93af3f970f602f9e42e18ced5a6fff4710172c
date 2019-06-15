@@ -1,0 +1,178 @@
+1560604798a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:4492:"description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ZURI TEMPLATE - {{ this.page.title }}</title>
+  <meta name="description" content="{{ this.page.meta_description }}">
+  <meta name="title" content="{{ this.page.meta_title }}">
+  <meta name="keywords" content="">
+  <meta name="author" content="omi">
+  <meta name="generator" content="OctoberCMS">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/style-responsive.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/animate.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/vertical.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css'|theme }}">
+  {% styles %}
+</head>
+
+<body class="appear-animate">
+
+  <div class="page-loader">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <!-- Header -->
+    <header id="layout-header">
+      {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+      {% page %}
+    </section>
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+      {% partial 'site/footer' %}
+    </footer>
+
+  </div>
+  <!-- Scripts -->
+  <script type="text/javascript" src="{{ 'assets/js/jquery-1.11.2.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.easing.1.3.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/SmoothScroll.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.scrollTo.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.localScroll.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.viewport.mini.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.countTo.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.appear.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.sticky.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.parallax-1.1.3.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.fitvids.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/isotope.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/imagesloaded.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.magnific-popup.min.js'|theme }}"></script>
+  <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
+        **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+  <script type="text/javascript" src="{{ 'assets/https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/gmap3.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/masonry.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.simple-text-rotator.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/all.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/contact-form.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.ajaxchimp.min.js'|theme }}"></script>
+  <!--[if lt IE 10]><script type="text/javascript" src="{{ 'assets/js/placeholder.js'|theme }}"></script><![endif]-->
+
+  {% framework extras %}
+  {% scripts %}
+
+</body>
+
+</html>
+";s:5:"mtime";i:1560602910;s:6:"markup";s:4454:"<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ZURI TEMPLATE - {{ this.page.title }}</title>
+  <meta name="description" content="{{ this.page.meta_description }}">
+  <meta name="title" content="{{ this.page.meta_title }}">
+  <meta name="keywords" content="">
+  <meta name="author" content="omi">
+  <meta name="generator" content="OctoberCMS">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/style-responsive.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/animate.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/vertical.min.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.css'|theme }}">
+  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css'|theme }}">
+  {% styles %}
+</head>
+
+<body class="appear-animate">
+
+  <div class="page-loader">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <!-- Page Wrap -->
+  <div class="page" id="top">
+
+    <!-- Header -->
+    <header id="layout-header">
+      {% partial 'site/header' %}
+    </header>
+
+    <!-- Content -->
+    <section id="layout-content">
+      {% page %}
+    </section>
+
+    <!-- Footer -->
+    <footer id="layout-footer">
+      {% partial 'site/footer' %}
+    </footer>
+
+  </div>
+  <!-- Scripts -->
+  <script type="text/javascript" src="{{ 'assets/js/jquery-1.11.2.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.easing.1.3.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/SmoothScroll.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.scrollTo.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.localScroll.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.viewport.mini.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.countTo.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.appear.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.sticky.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.parallax-1.1.3.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.fitvids.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/isotope.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/imagesloaded.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.magnific-popup.min.js'|theme }}"></script>
+  <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
+        **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+  <script type="text/javascript" src="{{ 'assets/https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/gmap3.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/wow.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/masonry.pkgd.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.simple-text-rotator.min.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/all.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/contact-form.js'|theme }}"></script>
+  <script type="text/javascript" src="{{ 'assets/js/jquery.ajaxchimp.min.js'|theme }}"></script>
+  <!--[if lt IE 10]><script type="text/javascript" src="{{ 'assets/js/placeholder.js'|theme }}"></script><![endif]-->
+
+  {% framework extras %}
+  {% scripts %}
+
+</body>
+
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";}}
