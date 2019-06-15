@@ -1,0 +1,23 @@
+{
+    "name": "zuri theme",
+    "type": "october-theme",
+    "description": "zuri theme",
+    "keywords": ["zuri", "cms", "e-commerce", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Omi Oblepias",
+            "email": "roblepias@gmail.com",
+            "role": "founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

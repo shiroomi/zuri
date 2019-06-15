@@ -1,0 +1,1020 @@
+1560534004a:1:{s:19:"elementsSliders.htm";a:9:{s:8:"fileName";s:19:"elementsSliders.htm";s:7:"content";s:22148:"title = "Elements Sliders"
+url = "/elements-sliders"
+layout = "default"
+is_hidden = 0
+==
+<!-- Head Section -->
+            <section class="small-section bg-gray-lighter">
+                <div class="relative container align-left">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Slider</h1>
+                            <div class="hs-line-4 font-alt black">
+                                Lorem ipsum dolor sit amet consectetur
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-30">
+                            <div class="mod-breadcrumbs font-alt align-right">
+                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Elements</a>&nbsp;/&nbsp;<span>Sliders</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Head Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <div class="row">
+
+                        <div class="col-md-7 mb-sm-40">
+
+                            <!-- Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Gallery -->
+
+                        </div>
+
+                        <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+
+                                <p>
+                                    Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-4 mb-sm-40">
+
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                <p>
+                                    Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-offset-1">
+
+                            <!-- Work Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-3.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-4.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Work Gallery -->
+
+                        </div>
+
+                     </div>
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Section -->
+            <section class="page-section bg-dark-alfa-70" data-background="images/full-width-images/section-bg-16.jpg">
+                <div class="container relative">
+
+                    <!-- Features Grid -->
+                    <div class="item-carousel owl-carousel">
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class=" icon-hotairballoon"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-clock"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-lightbulb"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-wine"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-tools"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-gears"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-browser"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-wallet"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-document"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                    </div>
+                    <!-- Features Grid -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Testimonials Section -->
+            <section class="page-section bg-gray fullwidth-slider bg-scroll" data-background="images/full-width-images/section-bg-5.jpg">
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+            </section>
+            <!-- End Testimonials Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <!-- Work Gallery -->
+                    <div class="work-full-media mb-80 mb-xs-40">
+
+                        <ul class="clearlist work-full-slider owl-carousel">
+                            <li>
+                                <img src="images/portfolio/full-project-1.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/portfolio/full-project-2.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/portfolio/full-project-3.jpg" alt="" />
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- End Work Gallery -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Fullwidth Slider -->
+            <div class="fullwidth-slider owl-carousel bg-gray">
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-7 mb-sm-40">
+
+                                <!-- Work Image -->
+                                <div class="work-full-media mt-0">
+                                    <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                </div>
+                                <!-- End Work Image -->
+
+                            </div>
+
+                            <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                    <p>
+                                        Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-5 col-lg-4 mb-sm-40">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Mega Creative</h3>
+                                    <p>
+                                        Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut. Phasellus facilisis mauris vel velit molestie pellentesqu accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                            <div class="col-md-7 col-lg-offset-1">
+
+                                <!-- Work Video -->
+                            <div class="work-full-media mt-0">
+
+                                <iframe src="http://player.vimeo.com/video/37066208?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1000" height="563" allowfullscreen></iframe>
+
+                            </div>
+                            <!-- End Work Video -->
+
+                            </div>
+
+                       </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-7 mb-sm-40">
+
+                                <!-- Work Image -->
+                                <div class="work-full-media mt-0">
+                                    <img src="images/portfolio/full-project-4.jpg" alt="" />
+                                </div>
+                                <!-- End Work Image -->
+
+                            </div>
+
+                            <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                    <p>
+                                        Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+            </div>
+            <!-- End Fullwidth Slider -->";s:5:"mtime";i:1560533341;s:6:"markup";s:22059:"<!-- Head Section -->
+            <section class="small-section bg-gray-lighter">
+                <div class="relative container align-left">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Slider</h1>
+                            <div class="hs-line-4 font-alt black">
+                                Lorem ipsum dolor sit amet consectetur
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-30">
+                            <div class="mod-breadcrumbs font-alt align-right">
+                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Elements</a>&nbsp;/&nbsp;<span>Sliders</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Head Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <div class="row">
+
+                        <div class="col-md-7 mb-sm-40">
+
+                            <!-- Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-1.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Gallery -->
+
+                        </div>
+
+                        <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+
+                                <p>
+                                    Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-4 mb-sm-40">
+
+                            <!-- About Project -->
+                            <div class="text">
+
+                                <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                <p>
+                                    Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                </p>
+
+                                <div class="mt-40">
+                                    <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                </div>
+
+                            </div>
+                            <!-- End About Project -->
+
+                        </div>
+
+                        <div class="col-md-7 col-lg-offset-1">
+
+                            <!-- Work Gallery -->
+                            <div class="work-full-media mt-0 white-shadow">
+                                <ul class="clearlist work-full-slider owl-carousel">
+                                    <li>
+                                        <img src="images/portfolio/full-project-3.jpg" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="images/portfolio/full-project-4.jpg" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Work Gallery -->
+
+                        </div>
+
+                     </div>
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Section -->
+            <section class="page-section bg-dark-alfa-70" data-background="images/full-width-images/section-bg-16.jpg">
+                <div class="container relative">
+
+                    <!-- Features Grid -->
+                    <div class="item-carousel owl-carousel">
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class=" icon-hotairballoon"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-clock"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-lightbulb"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-wine"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-tools"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-gears"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-browser"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We're Creative
+                            </div>
+                            <div class="features-descr">
+                                We find the best ideas for you
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-wallet"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We’re Punctual
+                            </div>
+                            <div class="features-descr">
+                                We always do your tasks on time
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                        <!-- Features Item -->
+                        <div class="features-item">
+                            <div class="features-icon">
+                                <span class="icon-document"></span>
+                            </div>
+                            <div class="features-title font-alt">
+                                We have magic
+                            </div>
+                            <div class="features-descr">
+                                You will be delighted
+                            </div>
+                        </div>
+                        <!-- End Features Item -->
+
+                    </div>
+                    <!-- Features Grid -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Testimonials Section -->
+            <section class="page-section bg-gray fullwidth-slider bg-scroll" data-background="images/full-width-images/section-bg-5.jpg">
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <div>
+                    <div class="container relative">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 align-center">
+                                <!-- Section Icon -->
+                                <div class="section-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                                <!-- Section Title -->
+                                <h3 class="small-title font-alt">What people say?</h3>
+                                <blockquote class="testimonial">
+                                    <p>
+                                        Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                                        risus utaliquam dapibus. Thanks!
+                                    </p>
+                                    <footer class="testimonial-author">
+                                        John Doe, doodle inc.
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Slide Item -->
+
+            </section>
+            <!-- End Testimonials Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <!-- Work Gallery -->
+                    <div class="work-full-media mb-80 mb-xs-40">
+
+                        <ul class="clearlist work-full-slider owl-carousel">
+                            <li>
+                                <img src="images/portfolio/full-project-1.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/portfolio/full-project-2.jpg" alt="" />
+                            </li>
+                            <li>
+                                <img src="images/portfolio/full-project-3.jpg" alt="" />
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- End Work Gallery -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Fullwidth Slider -->
+            <div class="fullwidth-slider owl-carousel bg-gray">
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-7 mb-sm-40">
+
+                                <!-- Work Image -->
+                                <div class="work-full-media mt-0">
+                                    <img src="images/portfolio/full-project-2.jpg" alt="" />
+                                </div>
+                                <!-- End Work Image -->
+
+                            </div>
+
+                            <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                    <p>
+                                        Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-5 col-lg-4 mb-sm-40">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Mega Creative</h3>
+                                    <p>
+                                        Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut. Phasellus facilisis mauris vel velit molestie pellentesqu accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                            <div class="col-md-7 col-lg-offset-1">
+
+                                <!-- Work Video -->
+                            <div class="work-full-media mt-0">
+
+                                <iframe src="http://player.vimeo.com/video/37066208?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="1000" height="563" allowfullscreen></iframe>
+
+                            </div>
+                            <!-- End Work Video -->
+
+                            </div>
+
+                       </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+                <!-- Slide Item -->
+                <section class="page-section bg-gray">
+                    <div class="container relative">
+
+                        <div class="row">
+
+                            <div class="col-md-7 mb-sm-40">
+
+                                <!-- Work Image -->
+                                <div class="work-full-media mt-0">
+                                    <img src="images/portfolio/full-project-4.jpg" alt="" />
+                                </div>
+                                <!-- End Work Image -->
+
+                            </div>
+
+                            <div class="col-md-5 col-lg-4 col-lg-offset-1">
+
+                                <!-- About Project -->
+                                <div class="text">
+                                    <h3 class="font-alt mb-30 mb-xxs-10">Creative Project</h3>
+                                    <p>
+                                        Phasellus facilisis mauris vel velit molestie pellentesque. Donec rutrum, tortor ut elementum venenatis, purus magna bibendum nisl, ut accumsan ipsum erat eu sapien.
+                                    </p>
+
+                                    <div class="mt-40">
+                                        <a href="#" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">View online</a>
+                                    </div>
+
+                                </div>
+                                <!-- End About Project -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- End Slide Item -->
+
+            </div>
+            <!-- End Fullwidth Slider -->";s:4:"code";N;s:5:"title";s:16:"Elements Sliders";s:3:"url";s:17:"/elements-sliders";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

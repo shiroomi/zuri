@@ -1,0 +1,516 @@
+1560534004a:1:{s:22:"elementsTypography.htm";a:9:{s:8:"fileName";s:22:"elementsTypography.htm";s:7:"content";s:8552:"title = "Elements Typography"
+url = "/elements-typography"
+layout = "default"
+is_hidden = 0
+==
+<!-- Head Section -->
+            <section class="small-section bg-gray-lighter">
+                <div class="relative container align-left">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Typography</h1>
+                            <div class="hs-line-4 font-alt black">
+                                Lorem ipsum dolor sit amet consectetur
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-30">
+                            <div class="mod-breadcrumbs font-alt align-right">
+                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Elements</a>&nbsp;/&nbsp;<span>Typography</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Head Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Formating
+                    </h2>
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-6 mb-40">
+
+                            <!-- Paragraph -->
+                            <div class="text">
+
+                                <h5 class="uppercase mb-30">Paragraph</h5>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis lacus augue, a hendrerit leo tristique vitae.
+                                    Consectetur adipiscing elit. Integer posuere erat a ante. Mauris non ipsum molestie, sagittis elit ac, vulputate odio.
+                                </p>
+
+                            </div>
+	                        <!-- End Paragraph -->
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-6 mb-40">
+
+                            <!-- Blockquote -->
+                            <blockquote>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
+
+                                <footer>
+                                    Someone famous in
+                                    <cite title="Source Title">
+                                        Source Title
+                                    </cite>
+                                </footer>
+
+                            </blockquote>
+							<!-- End Blockquote -->
+
+                        </div>
+
+                        <!-- End Col -->
+
+					</div>
+                    <!-- End Row -->
+
+                    <hr class="mb-60 mb-xs-30" />
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- List UL -->
+							<div class="text">
+							    <h5 class="uppercase mb-30">List UL</h5>
+
+                                <ul>
+                                    <li>First item</li>
+                                    <li>Second item</li>
+                                    <li>
+                                        Third item
+                                        <ul>
+                                            <li>First item</li>
+                                            <li>Second item</li>
+                                            <li>Third item</li>
+                                        </ul>
+                                    </li>
+    								<li>Fourth item</li>
+    								<li>Fives item</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- List OL -->
+							<div class="text">
+							    <h5 class="uppercase mb-30">List OL</h5>
+
+                                <ol>
+                                    <li>First item</li>
+                                    <li>Second item</li>
+                                    <li>
+                                        Third item
+                                        <ol>
+                                            <li>First item</li>
+                                            <li>Second item</li>
+                                            <li>Third item</li>
+                                        </ol>
+                                    </li>
+    								<li>Fourth item</li>
+    								<li>Fives item</li>
+                                </ol>
+                            </div>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- Emphasis -->
+                            <div class="text">
+                                <h5 class="uppercase mb-30">Emphasis</h5>
+
+                                <p>
+                                    <small>
+                                        This line of text is meant to be treated as fine print.
+                                    </small>
+                                </p>
+
+                                <p>
+                                    <strong>Rendered as bold text</strong>
+                                </p>
+
+                                <p>
+                                    <em>Rendered as italicized text</em>
+                                </p>
+
+                                <p>
+                                    <span class="serif">Rendered as italicized text</span>
+                                </p>
+
+                            </div>
+							<!-- End Emphasis -->
+
+
+                        </div>
+
+                        <!-- End Col -->
+
+                    </div>
+                    <!-- End Row -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Headings
+                    </h2>
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+							<h4>Heading 4</h4>
+							<h5>Heading 5</h5>
+							<h6>Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1 class="uppercase">Heading 1</h1>
+							<h2 class="uppercase">Heading 2</h2>
+							<h3 class="uppercase">Heading 3</h3>
+							<h4 class="uppercase">Heading 4</h4>
+							<h5 class="uppercase">Heading 5</h5>
+							<h6 class="uppercase">Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1 class="font-alt">Heading 1</h1>
+							<h2 class="font-alt">Heading 2</h2>
+							<h3 class="font-alt">Heading 3</h3>
+							<h4 class="font-alt">Heading 4</h4>
+							<h5 class="font-alt">Heading 5</h5>
+							<h6 class="font-alt">Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                     </div>
+                    <!-- End Row -->
+
+                </div>
+            </section>
+            <!-- End Section -->";s:5:"mtime";i:1560533341;s:6:"markup";s:8457:"<!-- Head Section -->
+            <section class="small-section bg-gray-lighter">
+                <div class="relative container align-left">
+
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">Typography</h1>
+                            <div class="hs-line-4 font-alt black">
+                                Lorem ipsum dolor sit amet consectetur
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-30">
+                            <div class="mod-breadcrumbs font-alt align-right">
+                                <a href="#">Home</a>&nbsp;/&nbsp;<a href="#">Elements</a>&nbsp;/&nbsp;<span>Typography</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Head Section -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Formating
+                    </h2>
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-6 mb-40">
+
+                            <!-- Paragraph -->
+                            <div class="text">
+
+                                <h5 class="uppercase mb-30">Paragraph</h5>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis lacus augue, a hendrerit leo tristique vitae.
+                                    Consectetur adipiscing elit. Integer posuere erat a ante. Mauris non ipsum molestie, sagittis elit ac, vulputate odio.
+                                </p>
+
+                            </div>
+	                        <!-- End Paragraph -->
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-6 mb-40">
+
+                            <!-- Blockquote -->
+                            <blockquote>
+
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                                </p>
+
+                                <footer>
+                                    Someone famous in
+                                    <cite title="Source Title">
+                                        Source Title
+                                    </cite>
+                                </footer>
+
+                            </blockquote>
+							<!-- End Blockquote -->
+
+                        </div>
+
+                        <!-- End Col -->
+
+					</div>
+                    <!-- End Row -->
+
+                    <hr class="mb-60 mb-xs-30" />
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- List UL -->
+							<div class="text">
+							    <h5 class="uppercase mb-30">List UL</h5>
+
+                                <ul>
+                                    <li>First item</li>
+                                    <li>Second item</li>
+                                    <li>
+                                        Third item
+                                        <ul>
+                                            <li>First item</li>
+                                            <li>Second item</li>
+                                            <li>Third item</li>
+                                        </ul>
+                                    </li>
+    								<li>Fourth item</li>
+    								<li>Fives item</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- List OL -->
+							<div class="text">
+							    <h5 class="uppercase mb-30">List OL</h5>
+
+                                <ol>
+                                    <li>First item</li>
+                                    <li>Second item</li>
+                                    <li>
+                                        Third item
+                                        <ol>
+                                            <li>First item</li>
+                                            <li>Second item</li>
+                                            <li>Third item</li>
+                                        </ol>
+                                    </li>
+    								<li>Fourth item</li>
+    								<li>Fives item</li>
+                                </ol>
+                            </div>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40">
+
+                            <!-- Emphasis -->
+                            <div class="text">
+                                <h5 class="uppercase mb-30">Emphasis</h5>
+
+                                <p>
+                                    <small>
+                                        This line of text is meant to be treated as fine print.
+                                    </small>
+                                </p>
+
+                                <p>
+                                    <strong>Rendered as bold text</strong>
+                                </p>
+
+                                <p>
+                                    <em>Rendered as italicized text</em>
+                                </p>
+
+                                <p>
+                                    <span class="serif">Rendered as italicized text</span>
+                                </p>
+
+                            </div>
+							<!-- End Emphasis -->
+
+
+                        </div>
+
+                        <!-- End Col -->
+
+                    </div>
+                    <!-- End Row -->
+
+                </div>
+            </section>
+            <!-- End Section -->
+
+
+            <!-- Divider -->
+            <hr class="mt-0 mb-0 "/>
+            <!-- End Divider -->
+
+
+            <!-- Section -->
+            <section class="page-section">
+                <div class="container relative">
+
+                    <h2 class="section-title font-alt mb-70 mb-sm-40">
+                        Headings
+                    </h2>
+
+                    <!-- Row -->
+                    <div class="row">
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1>Heading 1</h1>
+							<h2>Heading 2</h2>
+							<h3>Heading 3</h3>
+							<h4>Heading 4</h4>
+							<h5>Heading 5</h5>
+							<h6>Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1 class="uppercase">Heading 1</h1>
+							<h2 class="uppercase">Heading 2</h2>
+							<h3 class="uppercase">Heading 3</h3>
+							<h4 class="uppercase">Heading 4</h4>
+							<h5 class="uppercase">Heading 5</h5>
+							<h6 class="uppercase">Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                        <!-- Col -->
+
+                        <div class="col-sm-4 mb-40 align-center">
+
+                            <h1 class="font-alt">Heading 1</h1>
+							<h2 class="font-alt">Heading 2</h2>
+							<h3 class="font-alt">Heading 3</h3>
+							<h4 class="font-alt">Heading 4</h4>
+							<h5 class="font-alt">Heading 5</h5>
+							<h6 class="font-alt">Heading 6</h6>
+
+                        </div>
+
+                        <!-- End Col -->
+
+                     </div>
+                    <!-- End Row -->
+
+                </div>
+            </section>
+            <!-- End Section -->";s:4:"code";N;s:5:"title";s:19:"Elements Typography";s:3:"url";s:20:"/elements-typography";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
