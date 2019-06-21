@@ -212,4 +212,6 @@
   'Lovata\\Shopaholic\\Classes\\Store\\Offer\\SortingListStore' => 'plugins/lovata/shopaholic/classes/store/offer/SortingListStore.php',
   'Lovata\\Shopaholic\\Classes\\Store\\Offer\\ActiveListStore' => 'plugins/lovata/shopaholic/classes/store/offer/ActiveListStore.php',
   'Lovata\\Shopaholic\\Classes\\Item\\OfferItem' => 'plugins/lovata/shopaholic/classes/item/OfferItem.php',
+  'Lovata\\Shopaholic\\Classes\\Collection\\ProductCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\ProductCollection.php',
+  'Lovata\\Shopaholic\\Classes\\Collection\\CategoryCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\CategoryCollection.php',
 );

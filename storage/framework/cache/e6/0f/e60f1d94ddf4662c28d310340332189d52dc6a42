@@ -1,10 +1,10 @@
-1560660753a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1853:"==
-<nav class="main-nav dark transparent stick-fixed">
+1561127234a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:1856:"==
+<nav class="main-nav transparent stick-fixed">
   <div class="full-wrapper relative clearfix">
 
     <div class="nav-logo-wrap local-scroll">
       <a href="{{'index'|page }}" class="logo">
-        <img src="{{'/assets/images/logo-white.png'|theme }}" alt="" />
+        <img src="{{'/assets/images/logo-dark.png'|theme }}" alt="" />
       </a>
     </div>
     <div class="mobile-nav">
@@ -22,9 +22,9 @@
           <a href="{{'shop'|page }}">Shop</a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href="{{'faq'|page }}">FAQ </a>
-        </li>
+        </li> -->
 
         <li>
           <a href="{{'about'|page }}">About Us </a>
@@ -71,12 +71,12 @@
 
   </div>
 </nav>
-";s:5:"mtime";i:1560602911;s:6:"markup";s:1847:"<nav class="main-nav dark transparent stick-fixed">
+";s:5:"mtime";i:1560691008;s:6:"markup";s:1850:"<nav class="main-nav transparent stick-fixed">
   <div class="full-wrapper relative clearfix">
 
     <div class="nav-logo-wrap local-scroll">
       <a href="{{'index'|page }}" class="logo">
-        <img src="{{'/assets/images/logo-white.png'|theme }}" alt="" />
+        <img src="{{'/assets/images/logo-dark.png'|theme }}" alt="" />
       </a>
     </div>
     <div class="mobile-nav">
@@ -94,9 +94,9 @@
           <a href="{{'shop'|page }}">Shop</a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href="{{'faq'|page }}">FAQ </a>
-        </li>
+        </li> -->
 
         <li>
           <a href="{{'about'|page }}">About Us </a>

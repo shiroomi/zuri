@@ -32,7 +32,7 @@ class __TwigTemplate_f43b12874afe22818345f6ce5eb76865791e1318c57464ea81514fc3ff3
     protected function doDisplay(array $context, array $blocks = [])
     {
         // line 1
-        echo "<nav class=\"main-nav dark transparent stick-fixed\">
+        echo "<nav class=\"main-nav transparent stick-fixed\">
   <div class=\"full-wrapper relative clearfix\">
 
     <div class=\"nav-logo-wrap local-scroll\">
@@ -42,7 +42,7 @@ class __TwigTemplate_f43b12874afe22818345f6ce5eb76865791e1318c57464ea81514fc3ff3
         echo "\" class=\"logo\">
         <img src=\"";
         // line 6
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/logo-white.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/logo-dark.png");
         echo "\" alt=\"\" />
       </a>
     </div>
@@ -67,12 +67,12 @@ class __TwigTemplate_f43b12874afe22818345f6ce5eb76865791e1318c57464ea81514fc3ff3
         echo "\">Shop</a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href=\"";
         // line 25
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("faq");
         echo "\">FAQ </a>
-        </li>
+        </li> -->
 
         <li>
           <a href=\"";
@@ -150,12 +150,12 @@ class __TwigTemplate_f43b12874afe22818345f6ce5eb76865791e1318c57464ea81514fc3ff3
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"main-nav dark transparent stick-fixed\">
+        return new Source("<nav class=\"main-nav transparent stick-fixed\">
   <div class=\"full-wrapper relative clearfix\">
 
     <div class=\"nav-logo-wrap local-scroll\">
       <a href=\"{{'index'|page }}\" class=\"logo\">
-        <img src=\"{{'/assets/images/logo-white.png'|theme }}\" alt=\"\" />
+        <img src=\"{{'/assets/images/logo-dark.png'|theme }}\" alt=\"\" />
       </a>
     </div>
     <div class=\"mobile-nav\">
@@ -173,9 +173,9 @@ class __TwigTemplate_f43b12874afe22818345f6ce5eb76865791e1318c57464ea81514fc3ff3
           <a href=\"{{'shop'|page }}\">Shop</a>
         </li>
 
-        <li>
+        <!-- <li>
           <a href=\"{{'faq'|page }}\">FAQ </a>
-        </li>
+        </li> -->
 
         <li>
           <a href=\"{{'about'|page }}\">About Us </a>

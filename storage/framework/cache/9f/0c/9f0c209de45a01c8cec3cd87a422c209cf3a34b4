@@ -1,18 +1,23 @@
-1560660752a:1:{s:9:"index.htm";a:9:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:13686:"title = "Home"
+1561127234a:1:{s:9:"index.htm";a:11:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:12889:"title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[CategoryList]
+
+[ProductList]
+sorting = "no"
 ==
-<!-- Home Section -->
+{% component 'CategoryList' %}<!-- Home Section -->
 
-<section class="home-section bg-dark-alfa-90 parallax-2" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}" id="home">
+<section class="home-section bg-dark-alfa-90 parallax-2"
+  data-background="{{'/assets/images/full-width-images/cofi-main-image-2.jpg'|theme }}" id="home">
   <div class="js-height-full">
 
     <!-- Hero Content -->
     <div class="home-content container">
       <div class="home-text">
-
-        <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
+        <!-- <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
           Unique experience with
         </h1>
 
@@ -24,7 +29,7 @@ is_hidden = 0
           <a href="#about" class="btn btn-mod btn-w btn-medium btn-round hidden-xs">See More</a>
           <span class="hidden-xs">&nbsp;</span>
           <a href="http://vimeo.com/50201327" class="btn btn-mod btn-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -48,24 +53,45 @@ is_hidden = 0
 
       <!-- Content -->
       <div class="col-sm-12">
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+          Collection List
+        </h2>
+        <div class="col-md-2 col-lg-2 mb-60 mb-xs-40"></div>
+        {% set obCategoryList = CategoryList.make().tree() %}
+        {% if obCategoryList.isNotEmpty() %}
+        {% for obCategory in obCategoryList %}
+        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
 
+          <div class="post-prev-img">
 
-          {% set obCategory = CategoryPage.get() %}
+            <a href="#"><img src="{{ obCategory.preview_image.path }}" alt="" /></a>
+            <div class="intro-label">
+            </div>
+
+          </div>
+
+          <div class="post-prev-title font-alt align-center">
+            <a href="#">{{ obCategory.name }}</a>
+          </div>
+
+        </div>
+        {% endfor %}
+        {% endif %}
+        <div class="col-md-2 col-lg-2 mb-60 mb-xs-40"></div>
+        <!-- {% set obCategory = CategoryPage.get() %}
           {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obCategory.id) %}
           {%if obProductList.isNotEmpthy() %}
         <div class="row multi-columns-row">
-
-          <!-- Shop Item -->
+    
           {% for obProduct in obProductList%}
           <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
             <div class="post-prev-img">
                 {% if obProduct.preview_image is not empty %}
               <a href="{{'product'|page}}"><img src="{{obProduct.preview_image.path}}" alt="" /></a>
                 {% endif %}
-              <!-- <div class="intro-label">
+              <div class="intro-label">
                 <span class="label label-danger bg-red">Sale</span>
-              </div> -->
+              </div>
 
             </div>
 
@@ -86,11 +112,13 @@ is_hidden = 0
 
           </div>
 
-          <!-- End Shop Item -->
           {% endfor %}
         </div>
 
-        {% endif %}
+        {% endif %} -->
+
+
+
       </div>
       <!-- End Content -->
 
@@ -103,18 +131,20 @@ is_hidden = 0
 
 
 <!-- Testimonials Section -->
-<section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-3.jpg'|theme}}">
+<section class="page-section bg-dark bg-light-alfa-90 fullwidth-slider text-center "
+  data-background="{{'/assets/images/full-width-images/section-bg-3.jpg'|theme}}">
 
   <!-- Slide Item -->
   <div>
+    <img src="{{'/assets/images/banners/cofi-banner-1.jpg'|theme}}" alt="">
+  </div>
+  <!-- <div>
     <div class="container relative">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
           <div class="section-icon">
             <span class="icon-quote"></span>
           </div>
-          <!-- Section Title -->
           <h3 class="small-title font-alt">What people say?</h3>
           <blockquote class="testimonial white">
             <p>
@@ -127,59 +157,16 @@ is_hidden = 0
           </blockquote>
         </div>
       </div>
+      
     </div>
-  </div>
+  </div> -->
   <!-- End Slide Item -->
 
-  <!-- Slide Item -->
-  <div>
-    <div class="container relative">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
-          <div class="section-icon">
-            <span class="icon-quote"></span>
-          </div>
-          <!-- Section Title -->
-          <h3 class="small-title font-alt">What people say?</h3>
-          <blockquote class="testimonial white">
-            <p>
-              Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-              risus utaliquam dapibus. Thanks!
-            </p>
-            <footer class="testimonial-author">
-              John Doe, doodle inc.
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Slide Item -->
+
 
   <!-- Slide Item -->
   <div>
-    <div class="container relative">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
-          <div class="section-icon">
-            <span class="icon-quote"></span>
-          </div>
-          <!-- Section Title -->
-          <h3 class="small-title font-alt">What people say?</h3>
-          <blockquote class="testimonial white">
-            <p>
-              Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-              risus utaliquam dapibus. Thanks!
-            </p>
-            <footer class="testimonial-author">
-              John Doe, doodle inc.
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
+    <img src="{{'/assets/images/banners/cofi-banner-2.jpg'|theme}}" alt="">
   </div>
   <!-- End Slide Item -->
 
@@ -192,18 +179,48 @@ is_hidden = 0
   <div class="container relative">
 
     <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
-      Latest News
-
-
+      Featured Collection
     </h2>
 
     <div class="row multi-columns-row">
 
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
+        {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
+        {% if obProductList.isNotEmpty() %}
+                {% for obProduct in obProductList %}
+                    <div data-id="{{ obProduct.id }}">
+                        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
+
+                            <div class="post-prev-img">
+                              {% if obProduct.preview_image is not empty %}
+                              <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
+                              {% endif %}
+                              <div class="intro-label">
+                                <span class="label label-danger bg-red">Sale</span>
+                              </div>
+                
+                            </div>
+                
+                            <div class="post-prev-title font-alt align-center">
+                              <a href="{{'product'|page}}">{{ obProduct.name }}</a>
+                            </div>
+                
+                            <div class="post-prev-text align-center">
+                              <strong>{{ obProduct.preview_text }}</strong>
+                            </div>
+                
+                            <div class="post-prev-more align-center">
+                              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            </div>
+                
+                          </div>
+                {% endfor %}
+        {% endif %}
+
+      <!-- <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
         <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-1.jpg'|theme}}" alt="" /></a>
+          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-1.jpg'|theme}}"
+              alt="" /></a>
         </div>
 
         <div class="post-prev-title font-alt">
@@ -223,61 +240,8 @@ is_hidden = 0
           <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
         </div>
 
-      </div>
-      <!-- End Post Item -->
+      </div> -->
 
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-
-        <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-2.jpg'|theme}}" alt="" /></a>
-        </div>
-
-        <div class="post-prev-title font-alt">
-          <a href="">Minimalistic Design Forever</a>
-        </div>
-
-        <div class="post-prev-info font-alt">
-          <a href="">John Doe</a> | 9 December
-        </div>
-
-        <div class="post-prev-text">
-          Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor
-          consectetur fermentum nibh volutpat, accumsan purus.
-        </div>
-
-        <div class="post-prev-more">
-          <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-
-      </div>
-      <!-- End Post Item -->
-
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-
-        <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-3.jpg'|theme}}" alt="" /></a>
-        </div>
-
-        <div class="post-prev-title font-alt">
-          <a href="">Hipster&rsquo;s Style in&nbsp;Web</a>
-        </div>
-
-        <div class="post-prev-info font-alt">
-          <a href="">John Doe</a> | 7 December
-        </div>
-
-        <div class="post-prev-text">
-          Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor
-          consectetur fermentum nibh volutpat, accumsan purus.
-        </div>
-
-        <div class="post-prev-more">
-          <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-
-      </div>
       <!-- End Post Item -->
 
     </div>
@@ -300,7 +264,8 @@ is_hidden = 0
           </div>
 
           <div class="mb-20">
-            <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required />
+            <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10"
+              type="email" pattern=".{5,100}" required />
 
             <button type="submit" class="btn btn-mod btn-medium btn-round mb-xs-10">
               Subscribe
@@ -399,12 +364,14 @@ is_hidden = 0
 
               <!-- Name -->
               <div class="form-group">
-                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name"
+                  pattern=".{3,100}" required>
               </div>
 
               <!-- Email -->
               <div class="form-group">
-                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email"
+                  pattern=".{5,100}" required>
               </div>
 
             </div>
@@ -413,7 +380,8 @@ is_hidden = 0
 
               <!-- Message -->
               <div class="form-group">
-                <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;"
+                  placeholder="Message"></textarea>
               </div>
 
             </div>
@@ -453,17 +421,16 @@ is_hidden = 0
 
   </div>
 </section>
-<!-- End Contact Section -->
-";s:5:"mtime";i:1560606313;s:6:"markup";s:13623:"<!-- Home Section -->
+<!-- End Contact Section -->";s:5:"mtime";i:1561089494;s:6:"markup";s:12772:"{% component 'CategoryList' %}<!-- Home Section -->
 
-<section class="home-section bg-dark-alfa-90 parallax-2" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}" id="home">
+<section class="home-section bg-dark-alfa-90 parallax-2"
+  data-background="{{'/assets/images/full-width-images/cofi-main-image-2.jpg'|theme }}" id="home">
   <div class="js-height-full">
 
     <!-- Hero Content -->
     <div class="home-content container">
       <div class="home-text">
-
-        <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
+        <!-- <h1 class="hs-line-8 font-alt mb-50 mb-xs-30">
           Unique experience with
         </h1>
 
@@ -475,7 +442,7 @@ is_hidden = 0
           <a href="#about" class="btn btn-mod btn-w btn-medium btn-round hidden-xs">See More</a>
           <span class="hidden-xs">&nbsp;</span>
           <a href="http://vimeo.com/50201327" class="btn btn-mod btn-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -499,24 +466,45 @@ is_hidden = 0
 
       <!-- Content -->
       <div class="col-sm-12">
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+          Collection List
+        </h2>
+        <div class="col-md-2 col-lg-2 mb-60 mb-xs-40"></div>
+        {% set obCategoryList = CategoryList.make().tree() %}
+        {% if obCategoryList.isNotEmpty() %}
+        {% for obCategory in obCategoryList %}
+        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
 
+          <div class="post-prev-img">
 
-          {% set obCategory = CategoryPage.get() %}
+            <a href="#"><img src="{{ obCategory.preview_image.path }}" alt="" /></a>
+            <div class="intro-label">
+            </div>
+
+          </div>
+
+          <div class="post-prev-title font-alt align-center">
+            <a href="#">{{ obCategory.name }}</a>
+          </div>
+
+        </div>
+        {% endfor %}
+        {% endif %}
+        <div class="col-md-2 col-lg-2 mb-60 mb-xs-40"></div>
+        <!-- {% set obCategory = CategoryPage.get() %}
           {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active().category(obCategory.id) %}
           {%if obProductList.isNotEmpthy() %}
         <div class="row multi-columns-row">
-
-          <!-- Shop Item -->
+    
           {% for obProduct in obProductList%}
           <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
             <div class="post-prev-img">
                 {% if obProduct.preview_image is not empty %}
               <a href="{{'product'|page}}"><img src="{{obProduct.preview_image.path}}" alt="" /></a>
                 {% endif %}
-              <!-- <div class="intro-label">
+              <div class="intro-label">
                 <span class="label label-danger bg-red">Sale</span>
-              </div> -->
+              </div>
 
             </div>
 
@@ -537,11 +525,13 @@ is_hidden = 0
 
           </div>
 
-          <!-- End Shop Item -->
           {% endfor %}
         </div>
 
-        {% endif %}
+        {% endif %} -->
+
+
+
       </div>
       <!-- End Content -->
 
@@ -554,18 +544,20 @@ is_hidden = 0
 
 
 <!-- Testimonials Section -->
-<section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-3.jpg'|theme}}">
+<section class="page-section bg-dark bg-light-alfa-90 fullwidth-slider text-center "
+  data-background="{{'/assets/images/full-width-images/section-bg-3.jpg'|theme}}">
 
   <!-- Slide Item -->
   <div>
+    <img src="{{'/assets/images/banners/cofi-banner-1.jpg'|theme}}" alt="">
+  </div>
+  <!-- <div>
     <div class="container relative">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
           <div class="section-icon">
             <span class="icon-quote"></span>
           </div>
-          <!-- Section Title -->
           <h3 class="small-title font-alt">What people say?</h3>
           <blockquote class="testimonial white">
             <p>
@@ -578,59 +570,16 @@ is_hidden = 0
           </blockquote>
         </div>
       </div>
+      
     </div>
-  </div>
+  </div> -->
   <!-- End Slide Item -->
 
-  <!-- Slide Item -->
-  <div>
-    <div class="container relative">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
-          <div class="section-icon">
-            <span class="icon-quote"></span>
-          </div>
-          <!-- Section Title -->
-          <h3 class="small-title font-alt">What people say?</h3>
-          <blockquote class="testimonial white">
-            <p>
-              Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-              risus utaliquam dapibus. Thanks!
-            </p>
-            <footer class="testimonial-author">
-              John Doe, doodle inc.
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Slide Item -->
+
 
   <!-- Slide Item -->
   <div>
-    <div class="container relative">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 align-center">
-          <!-- Section Icon -->
-          <div class="section-icon">
-            <span class="icon-quote"></span>
-          </div>
-          <!-- Section Title -->
-          <h3 class="small-title font-alt">What people say?</h3>
-          <blockquote class="testimonial white">
-            <p>
-              Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-              risus utaliquam dapibus. Thanks!
-            </p>
-            <footer class="testimonial-author">
-              John Doe, doodle inc.
-            </footer>
-          </blockquote>
-        </div>
-      </div>
-    </div>
+    <img src="{{'/assets/images/banners/cofi-banner-2.jpg'|theme}}" alt="">
   </div>
   <!-- End Slide Item -->
 
@@ -643,18 +592,48 @@ is_hidden = 0
   <div class="container relative">
 
     <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
-      Latest News
-
-
+      Featured Collection
     </h2>
 
     <div class="row multi-columns-row">
 
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
+        {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
+        {% if obProductList.isNotEmpty() %}
+                {% for obProduct in obProductList %}
+                    <div data-id="{{ obProduct.id }}">
+                        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
+
+                            <div class="post-prev-img">
+                              {% if obProduct.preview_image is not empty %}
+                              <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
+                              {% endif %}
+                              <div class="intro-label">
+                                <span class="label label-danger bg-red">Sale</span>
+                              </div>
+                
+                            </div>
+                
+                            <div class="post-prev-title font-alt align-center">
+                              <a href="{{'product'|page}}">{{ obProduct.name }}</a>
+                            </div>
+                
+                            <div class="post-prev-text align-center">
+                              <strong>{{ obProduct.preview_text }}</strong>
+                            </div>
+                
+                            <div class="post-prev-more align-center">
+                              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                            </div>
+                
+                          </div>
+                {% endfor %}
+        {% endif %}
+
+      <!-- <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
         <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-1.jpg'|theme}}" alt="" /></a>
+          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-1.jpg'|theme}}"
+              alt="" /></a>
         </div>
 
         <div class="post-prev-title font-alt">
@@ -674,61 +653,8 @@ is_hidden = 0
           <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
         </div>
 
-      </div>
-      <!-- End Post Item -->
+      </div> -->
 
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
-
-        <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-2.jpg'|theme}}" alt="" /></a>
-        </div>
-
-        <div class="post-prev-title font-alt">
-          <a href="">Minimalistic Design Forever</a>
-        </div>
-
-        <div class="post-prev-info font-alt">
-          <a href="">John Doe</a> | 9 December
-        </div>
-
-        <div class="post-prev-text">
-          Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor
-          consectetur fermentum nibh volutpat, accumsan purus.
-        </div>
-
-        <div class="post-prev-more">
-          <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-
-      </div>
-      <!-- End Post Item -->
-
-      <!-- Post Item -->
-      <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
-
-        <div class="post-prev-img">
-          <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-3.jpg'|theme}}" alt="" /></a>
-        </div>
-
-        <div class="post-prev-title font-alt">
-          <a href="">Hipster&rsquo;s Style in&nbsp;Web</a>
-        </div>
-
-        <div class="post-prev-info font-alt">
-          <a href="">John Doe</a> | 7 December
-        </div>
-
-        <div class="post-prev-text">
-          Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor
-          consectetur fermentum nibh volutpat, accumsan purus.
-        </div>
-
-        <div class="post-prev-more">
-          <a href="" class="btn btn-mod btn-gray btn-round">Read More <i class="fa fa-angle-right"></i></a>
-        </div>
-
-      </div>
       <!-- End Post Item -->
 
     </div>
@@ -751,7 +677,8 @@ is_hidden = 0
           </div>
 
           <div class="mb-20">
-            <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10" type="email" pattern=".{5,100}" required />
+            <input placeholder="Enter Your Email" class="newsletter-field form-control input-md round mb-xs-10"
+              type="email" pattern=".{5,100}" required />
 
             <button type="submit" class="btn btn-mod btn-medium btn-round mb-xs-10">
               Subscribe
@@ -850,12 +777,14 @@ is_hidden = 0
 
               <!-- Name -->
               <div class="form-group">
-                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name" pattern=".{3,100}" required>
+                <input type="text" name="name" id="name" class="input-md round form-control" placeholder="Name"
+                  pattern=".{3,100}" required>
               </div>
 
               <!-- Email -->
               <div class="form-group">
-                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email" pattern=".{5,100}" required>
+                <input type="email" name="email" id="email" class="input-md round form-control" placeholder="Email"
+                  pattern=".{5,100}" required>
               </div>
 
             </div>
@@ -864,7 +793,8 @@ is_hidden = 0
 
               <!-- Message -->
               <div class="form-group">
-                <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;" placeholder="Message"></textarea>
+                <textarea name="message" id="message" class="input-md round form-control" style="height: 84px;"
+                  placeholder="Message"></textarea>
               </div>
 
             </div>
@@ -904,4 +834,4 @@ is_hidden = 0
 
   </div>
 </section>
-<!-- End Contact Section -->";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+<!-- End Contact Section -->";s:4:"code";N;s:5:"title";s:4:"Home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:12:"CategoryList";a:0:{}s:11:"ProductList";a:1:{s:7:"sorting";s:2:"no";}}}

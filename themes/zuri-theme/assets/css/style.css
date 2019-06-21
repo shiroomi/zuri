@@ -607,7 +607,7 @@ a.btn-mod{
     box-sizing: border-box;
     padding: 4px 13px;
     color: #fff;
-    background: rgba(34,34,34, .9);
+    background: #da2f0c;
     border: 2px solid transparent;
     font-size: 11px;
     font-weight: 400;
@@ -1930,9 +1930,9 @@ a.logo:hover{
  * Transparent panel style
  */
 
-.main-nav.transparent{
+/* .main-nav.transparent{
     background: transparent !important;
-}
+} */
 .main-nav.js-transparent{
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
     -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
@@ -2555,7 +2555,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(3,3,3, .9);
+    /* background: rgba(3,3,3, .9); */
 }
 .bg-light-alfa:before{
     content: " ";
@@ -3920,7 +3920,7 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: #111;
+    background: #da2f0c;
     
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -4176,7 +4176,7 @@ a.logo:hover{
     color: #fff;
 }
 .footer-social-links a:hover:before{
-    background: #111;
+    background: #da2f0c;
 }
 
 a.link-to-top{
