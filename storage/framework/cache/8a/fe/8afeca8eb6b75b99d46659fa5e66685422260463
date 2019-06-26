@@ -1,4 +1,4 @@
-1561127234a:1:{s:9:"about.htm";a:9:{s:8:"fileName";s:9:"about.htm";s:7:"content";s:5051:"title = "About Us"
+1561557254a:1:{s:9:"about.htm";a:9:{s:8:"fileName";s:9:"about.htm";s:7:"content";s:4735:"title = "About Us"
 url = "/about"
 layout = "default"
 is_hidden = 0
@@ -64,19 +64,18 @@ is_hidden = 0
   <!-- End About Section -->
 
 
-  <!-- Testimonials Section -->
-  <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
+  <!-- <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -91,18 +90,18 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -117,18 +116,18 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -143,11 +142,10 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-  </section>
-  <!-- End Testimonials Section -->
-";s:5:"mtime";i:1560602910;s:6:"markup";s:4972:"<!-- Head Section -->
+  </section> -->
+";s:5:"mtime";i:1561555206;s:6:"markup";s:4656:"<!-- Head Section -->
   <section class="page-section bg-dark-alfa-50 parallax-3" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
     <div class="relative container align-left">
 
@@ -208,19 +206,18 @@ is_hidden = 0
   <!-- End About Section -->
 
 
-  <!-- Testimonials Section -->
-  <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
+  <!-- <section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -235,18 +232,18 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -261,18 +258,18 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-    <!-- Slide Item -->
+    
     <div>
       <div class="container relative">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 align-center">
-            <!-- Section Icon -->
+            
             <div class="section-icon">
               <span class="icon-quote"></span>
             </div>
-            <!-- Section Title -->
+            
             <h3 class="small-title font-alt">What people say?</h3>
             <blockquote class="testimonial white">
               <p>
@@ -287,7 +284,6 @@ is_hidden = 0
         </div>
       </div>
     </div>
-    <!-- End Slide Item -->
+    
 
-  </section>
-  <!-- End Testimonials Section -->";s:4:"code";N;s:5:"title";s:8:"About Us";s:3:"url";s:6:"/about";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+  </section> -->";s:4:"code";N;s:5:"title";s:8:"About Us";s:3:"url";s:6:"/about";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

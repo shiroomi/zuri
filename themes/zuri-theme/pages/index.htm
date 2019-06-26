@@ -6,9 +6,10 @@ is_hidden = 0
 [CategoryList]
 
 [ProductList]
-sorting = "no"
+sorting = "new"
 ==
-{% component 'CategoryList' %}<!-- Home Section -->
+{% component 'CategoryList' %}
+<!-- Home Section -->
 
 <section class="home-section bg-dark-alfa-90 parallax-2"
   data-background="{{'/assets/images/full-width-images/cofi-main-image-2.jpg'|theme }}" id="home">
@@ -184,39 +185,44 @@ sorting = "no"
 
     <div class="row multi-columns-row">
 
-        {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
-        {% if obProductList.isNotEmpty() %}
-                {% for obProduct in obProductList %}
-                    <div data-id="{{ obProduct.id }}">
-                        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
+      {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
+      {% if obProductList.isNotEmpty() %}
+      {% for obProduct in obProductList|slice(0, 6)  %}
+      <div data-id="{{ obProduct.id }}">
+        <div class="col-md-4 col-lg-4 mb-60 mb-xs-40">
 
-                            <div class="post-prev-img">
-                              {% if obProduct.preview_image is not empty %}
-                              <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
-                              {% endif %}
-                              <div class="intro-label">
-                                <span class="label label-danger bg-red">Sale</span>
-                              </div>
-                
-                            </div>
-                
-                            <div class="post-prev-title font-alt align-center">
-                              <a href="{{'product'|page}}">{{ obProduct.name }}</a>
-                            </div>
-                
-                            <div class="post-prev-text align-center">
-                              <strong>{{ obProduct.preview_text }}</strong>
-                            </div>
-                
-                            <div class="post-prev-more align-center">
-                              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                            </div>
-                
-                          </div>
-                {% endfor %}
+          <div class="post-prev-img">
+            {% if obProduct.preview_image is not empty %}
+            <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
+            {% endif %}
+            <div class="intro-label">
+              <span class="label label-danger bg-red">Sale</span>
+            </div>
+
+          </div>
+
+          <div class="post-prev-title font-alt align-center">
+            <a href="{{'product'|page}}">{{ obProduct.name }}</a>
+          </div>
+
+          <div class="post-prev-text align-center">
+            <strong>{{ obProduct.preview_text }}</strong>
+            {% set obOffer = obProduct.offer.first() %}
+            {% if obOffer.isNotEmpty()%}
+            <span>Price: {{ obOffer.currency }} {{ obOffer.price }} </span>
+            {% endif %}
+          </div>
+
+
+          <div class="post-prev-more align-center">
+            <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+          </div>
+
+        </div>
+        {% endfor %}
         {% endif %}
 
-      <!-- <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
+        <!-- <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
         <div class="post-prev-img">
           <a href="blog-single-sidebar-right.html"><img src="{{'/assets/images/blog/post-prev-1.jpg'|theme}}"
@@ -242,11 +248,11 @@ sorting = "no"
 
       </div> -->
 
-      <!-- End Post Item -->
+        <!-- End Post Item -->
+
+      </div>
 
     </div>
-
-  </div>
 </section>
 <!-- End Blog Section -->
 

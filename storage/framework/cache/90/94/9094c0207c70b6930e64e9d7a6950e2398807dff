@@ -1,7 +1,31 @@
-1561127234a:1:{s:8:"shop.htm";a:9:{s:8:"fileName";s:8:"shop.htm";s:7:"content";s:20555:"title = "Shop"
+1561557254a:1:{s:8:"shop.htm";a:11:{s:8:"fileName";s:8:"shop.htm";s:7:"content";s:12680:"title = "Shop"
 url = "/shop"
 layout = "default"
 is_hidden = 0
+
+[ProductList]
+sorting = "no"
+
+[Pagination]
+count_per_page = 8
+pagination_limit = 5
+active_class = "active"
+first_button_name = "First"
+first_button_limit = 1
+first-more_button_name = "..."
+first-more_button_limit = 1
+prev_button_name = "Prev"
+prev_button_limit = 1
+prev-more_button_name = "..."
+prev-more_button_limit = 1
+next-more_button_name = "..."
+next-more_button_limit = 1
+next_button_name = "Next"
+next_button_limit = 1
+last-more_button_name = "..."
+last-more_button_limit = 1
+last_button_name = "Last"
+last_button_limit = 1
 ==
 <!-- Head Section -->
 <section class="page-section bg-dark-alfa-70 parallax-3" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
@@ -38,8 +62,7 @@ is_hidden = 0
       <!-- Content -->
       <div class="col-sm-12">
 
-        <!-- Shop options -->
-        <div class="clearfix mb-40">
+        <!-- <div class="clearfix mb-40">
 
           <div class="left section-text mt-10">
             Showing 1–12 of 23 results
@@ -55,329 +78,100 @@ is_hidden = 0
             </form>
           </div>
 
-        </div>
-        <!-- End Shop options -->
+        </div> -->
 
         <div class="row multi-columns-row">
+            {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
 
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
+            {% set iPage = Pagination.getPageFromRequest() %}
+            {% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
+            
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-            <div class="post-prev-img">
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-              <div class="intro-label">
-                <span class="label label-danger bg-red">Sale</span>
+            {% if arProductList is not empty %}
+
+            
+            {% if obProductList.isNotEmpty() %}
+            {% for obProduct in arProductList %}
+            <div data-id="{{ obProduct.id }}">
+              <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
+      
+                <div class="post-prev-img">
+                  {% if obProduct.preview_image is not empty %}
+                  <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
+                  {% endif %}
+                  <div class="intro-label">
+                  </div>
+      
+                </div>
+      
+                <div class="post-prev-title font-alt align-center">
+                  <a href="{{'product'|page}}">{{ obProduct.name }}</a>
+                </div>
+      
+                <div class="post-prev-text align-center">
+                  <strong>{{ obProduct.preview_text }}</strong>
+                  {% set obOffer = obProduct.offer.first() %}
+                  {% if obOffer.isNotEmpty()%}
+                  <span>Price: {{ obOffer.currency }} {{ obOffer.price }} </span>
+                  {% endif %}
+                </div>
+                
+      
+                <div class="post-prev-more align-center">
+                  <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                </div>
+      
               </div>
-
             </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <del>$150.00</del>
-              &nbsp;
-              <strong>$94.75</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
+              {% endfor %}
+              
+              {% endif %}
+              <!-- End Post Item -->
+      
+            
+      
           </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-
-              <div class="intro-label">
-                <span class="label label-danger bg-red">Sale</span>
-              </div>
-
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <del>$150.00</del>
-              &nbsp;
-              <strong>$94.75</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
 
         </div>
-
-        <!-- Pagination -->
-        <div class="pagination">
-          <a href=""><i class="fa fa-angle-left"></i></a>
-          <a href="" class="active">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a class="no-active">...</a>
-          <a href="">9</a>
-          <a href=""><i class="fa fa-angle-right"></i></a>
-        </div>
-        <!-- End Pagination -->
 
       </div>
+        {# Render pagination buttons #}
+              {% if arPaginationList is not empty %}
+              <nav aria-label="...">
+                  <ul class="pagination pagination-lg">
+                  {% for arPagination in arPaginationList %}
+                 <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}">{{ arPagination.name }}</a>
+                  {% endfor %}
+                  </ul>
+              </nav>
+              {% endif %}
+
+              {% endif %}
       <!-- End Content -->
 
 
     </div>
 
-  </div>
 </section>
 <!-- End Section -->
 
 
 <!-- Divider -->
 <hr class="mt-0 mb-0" />
-<!-- End Divider -->
 
 
-<!-- Widgets Section -->
-<section class="page-section">
+<!-- <section class="page-section">
   <div class="container relative">
 
     <div class="row multi-columns-row">
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Cart</h5>
@@ -385,7 +179,6 @@ is_hidden = 0
           <div class="widget-body">
             <ul class="clearlist widget-posts">
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -398,9 +191,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -413,7 +204,6 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
 
@@ -436,13 +226,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Tags</h5>
@@ -461,9 +249,7 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Text widget</h5>
@@ -481,13 +267,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Categories</h5>
@@ -528,9 +312,7 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Filter by price</h5>
@@ -554,13 +336,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Bestsellers</h5>
@@ -568,7 +348,6 @@ is_hidden = 0
           <div class="widget-body">
             <ul class="clearlist widget-posts">
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -588,9 +367,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -607,9 +384,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -626,22 +401,18 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
     </div>
 
   </div>
-</section>
-<!-- End Widgets Section -->
-";s:5:"mtime";i:1560602911;s:6:"markup";s:20483:"<!-- Head Section -->
+</section> -->";s:5:"mtime";i:1561554889;s:6:"markup";s:12053:"<!-- Head Section -->
 <section class="page-section bg-dark-alfa-70 parallax-3" data-background="{{'/assets/images/full-width-images/section-bg-1.jpg'|theme }}">
   <div class="relative container align-left">
 
@@ -676,8 +447,7 @@ is_hidden = 0
       <!-- Content -->
       <div class="col-sm-12">
 
-        <!-- Shop options -->
-        <div class="clearfix mb-40">
+        <!-- <div class="clearfix mb-40">
 
           <div class="left section-text mt-10">
             Showing 1–12 of 23 results
@@ -693,329 +463,100 @@ is_hidden = 0
             </form>
           </div>
 
-        </div>
-        <!-- End Shop options -->
+        </div> -->
 
         <div class="row multi-columns-row">
+            {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
 
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
+            {% set iPage = Pagination.getPageFromRequest() %}
+            {% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
+            
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-            <div class="post-prev-img">
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-              <div class="intro-label">
-                <span class="label label-danger bg-red">Sale</span>
+            {% if arProductList is not empty %}
+
+            
+            {% if obProductList.isNotEmpty() %}
+            {% for obProduct in arProductList %}
+            <div data-id="{{ obProduct.id }}">
+              <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
+      
+                <div class="post-prev-img">
+                  {% if obProduct.preview_image is not empty %}
+                  <a href="{{'product'|page}}"><img src="{{ obProduct.preview_image.path }}" alt="" /></a>
+                  {% endif %}
+                  <div class="intro-label">
+                  </div>
+      
+                </div>
+      
+                <div class="post-prev-title font-alt align-center">
+                  <a href="{{'product'|page}}">{{ obProduct.name }}</a>
+                </div>
+      
+                <div class="post-prev-text align-center">
+                  <strong>{{ obProduct.preview_text }}</strong>
+                  {% set obOffer = obProduct.offer.first() %}
+                  {% if obOffer.isNotEmpty()%}
+                  <span>Price: {{ obOffer.currency }} {{ obOffer.price }} </span>
+                  {% endif %}
+                </div>
+                
+      
+                <div class="post-prev-more align-center">
+                  <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                </div>
+      
               </div>
-
             </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <del>$150.00</del>
-              &nbsp;
-              <strong>$94.75</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
+              {% endfor %}
+              
+              {% endif %}
+              <!-- End Post Item -->
+      
+            
+      
           </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-
-              <div class="intro-label">
-                <span class="label label-danger bg-red">Sale</span>
-              </div>
-
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <del>$150.00</del>
-              &nbsp;
-              <strong>$94.75</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$28.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Longline Long Sleeve</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$39.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class="col-md-3 col-lg-3 mb-60 mb-xs-40">
-
-            <div class="post-prev-img">
-              <a href="{{'product'|page}}"><img src="{{'/assets/images/shop/shop-prev-1.jpg'|theme}}" alt="" /></a>
-            </div>
-
-            <div class="post-prev-title font-alt align-center">
-              <a href="{{'product'|page}}">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class="post-prev-text align-center">
-              <strong>$85.99</strong>
-            </div>
-
-            <div class="post-prev-more align-center">
-              <a href="#" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
 
         </div>
-
-        <!-- Pagination -->
-        <div class="pagination">
-          <a href=""><i class="fa fa-angle-left"></i></a>
-          <a href="" class="active">1</a>
-          <a href="">2</a>
-          <a href="">3</a>
-          <a class="no-active">...</a>
-          <a href="">9</a>
-          <a href=""><i class="fa fa-angle-right"></i></a>
-        </div>
-        <!-- End Pagination -->
 
       </div>
+        {# Render pagination buttons #}
+              {% if arPaginationList is not empty %}
+              <nav aria-label="...">
+                  <ul class="pagination pagination-lg">
+                  {% for arPagination in arPaginationList %}
+                 <a href="?page={{ arPagination.value }}" class="{{ arPagination.class }}">{{ arPagination.name }}</a>
+                  {% endfor %}
+                  </ul>
+              </nav>
+              {% endif %}
+
+              {% endif %}
       <!-- End Content -->
 
 
     </div>
 
-  </div>
 </section>
 <!-- End Section -->
 
 
 <!-- Divider -->
 <hr class="mt-0 mb-0" />
-<!-- End Divider -->
 
 
-<!-- Widgets Section -->
-<section class="page-section">
+<!-- <section class="page-section">
   <div class="container relative">
 
     <div class="row multi-columns-row">
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Cart</h5>
@@ -1023,7 +564,6 @@ is_hidden = 0
           <div class="widget-body">
             <ul class="clearlist widget-posts">
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -1036,9 +576,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -1051,7 +589,6 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
 
@@ -1074,13 +611,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Tags</h5>
@@ -1099,9 +634,7 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Text widget</h5>
@@ -1119,13 +652,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Categories</h5>
@@ -1166,9 +697,7 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Filter by price</h5>
@@ -1192,13 +721,11 @@ is_hidden = 0
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class="col-sm-6 col-md-3 col-lg-3">
 
-        <!-- Widget -->
         <div class="widget">
 
           <h5 class="widget-title font-alt">Bestsellers</h5>
@@ -1206,7 +733,6 @@ is_hidden = 0
           <div class="widget-body">
             <ul class="clearlist widget-posts">
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -1226,9 +752,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -1245,9 +769,7 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class="clearfix">
                 <a href=""><img src="{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}" alt="" class="widget-posts-img" /></a>
                 <div class="widget-posts-descr">
@@ -1264,18 +786,15 @@ is_hidden = 0
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
     </div>
 
   </div>
-</section>
-<!-- End Widgets Section -->";s:4:"code";N;s:5:"title";s:4:"Shop";s:3:"url";s:5:"/shop";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}
+</section> -->";s:4:"code";N;s:5:"title";s:4:"Shop";s:3:"url";s:5:"/shop";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"ProductList";a:1:{s:7:"sorting";s:2:"no";}s:10:"Pagination";a:19:{s:14:"count_per_page";s:1:"8";s:16:"pagination_limit";s:1:"5";s:12:"active_class";s:6:"active";s:17:"first_button_name";s:5:"First";s:18:"first_button_limit";s:1:"1";s:22:"first-more_button_name";s:3:"...";s:23:"first-more_button_limit";s:1:"1";s:16:"prev_button_name";s:4:"Prev";s:17:"prev_button_limit";s:1:"1";s:21:"prev-more_button_name";s:3:"...";s:22:"prev-more_button_limit";s:1:"1";s:21:"next-more_button_name";s:3:"...";s:22:"next-more_button_limit";s:1:"1";s:16:"next_button_name";s:4:"Next";s:17:"next_button_limit";s:1:"1";s:21:"last-more_button_name";s:3:"...";s:22:"last-more_button_limit";s:1:"1";s:16:"last_button_name";s:4:"Last";s:17:"last_button_limit";s:1:"1";}}}

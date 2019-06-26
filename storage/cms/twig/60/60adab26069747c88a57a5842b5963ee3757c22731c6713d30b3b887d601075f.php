@@ -73,8 +73,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
       <!-- Content -->
       <div class=\"col-sm-12\">
 
-        <!-- Shop options -->
-        <div class=\"clearfix mb-40\">
+        <!-- <div class=\"clearfix mb-40\">
 
           <div class=\"left section-text mt-10\">
             Showing 1–12 of 23 results
@@ -90,425 +89,184 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
             </form>
           </div>
 
-        </div>
-        <!-- End Shop options -->
+        </div> -->
 
         <div class=\"row multi-columns-row\">
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-
-              <a href=\"";
-        // line 63
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-              <div class=\"intro-label\">
-                <span class=\"label label-danger bg-red\">Sale</span>
+            ";
+        // line 55
+        $context["obProductList"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["ProductList"] ?? null), "make", [], "method", false, false, false, 55), "sort", [0 => twig_get_attribute($this->env, $this->source, ($context["ProductList"] ?? null), "getSorting", [], "method", false, false, false, 55)], "method", false, false, false, 55), "active", [], "method", false, false, false, 55);
+        // line 56
+        echo "
+            ";
+        // line 57
+        $context["iPage"] = twig_get_attribute($this->env, $this->source, ($context["Pagination"] ?? null), "getPageFromRequest", [], "method", false, false, false, 57);
+        // line 58
+        echo "            ";
+        $context["arPaginationList"] = twig_get_attribute($this->env, $this->source, ($context["Pagination"] ?? null), "get", [0 => ($context["iPage"] ?? null), 1 => twig_get_attribute($this->env, $this->source, ($context["obProductList"] ?? null), "count", [], "method", false, false, false, 58)], "method", false, false, false, 58);
+        // line 59
+        echo "            
+            ";
+        // line 61
+        echo "            ";
+        $context["arProductList"] = twig_get_attribute($this->env, $this->source, ($context["obProductList"] ?? null), "page", [0 => ($context["iPage"] ?? null), 1 => twig_get_attribute($this->env, $this->source, ($context["Pagination"] ?? null), "getCountPerPage", [], "method", false, false, false, 61)], "method", false, false, false, 61);
+        // line 62
+        echo "
+            ";
+        // line 64
+        echo "            ";
+        $context["arProductList"] = twig_get_attribute($this->env, $this->source, ($context["obProductList"] ?? null), "page", [0 => ($context["iPage"] ?? null), 1 => twig_get_attribute($this->env, $this->source, ($context["Pagination"] ?? null), "getCountPerPage", [], "method", false, false, false, 64)], "method", false, false, false, 64);
+        // line 65
+        echo "
+            ";
+        // line 66
+        if ( !twig_test_empty(($context["arProductList"] ?? null))) {
+            // line 67
+            echo "
+            
+            ";
+            // line 69
+            if (twig_get_attribute($this->env, $this->source, ($context["obProductList"] ?? null), "isNotEmpty", [], "method", false, false, false, 69)) {
+                // line 70
+                echo "            ";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable(($context["arProductList"] ?? null));
+                foreach ($context['_seq'] as $context["_key"] => $context["obProduct"]) {
+                    // line 71
+                    echo "            <div data-id=\"";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["obProduct"], "id", [], "any", false, false, false, 71), "html", null, true);
+                    echo "\">
+              <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
+      
+                <div class=\"post-prev-img\">
+                  ";
+                    // line 75
+                    if ( !twig_test_empty(twig_get_attribute($this->env, $this->source, $context["obProduct"], "preview_image", [], "any", false, false, false, 75))) {
+                        // line 76
+                        echo "                  <a href=\"";
+                        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
+                        echo "\"><img src=\"";
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["obProduct"], "preview_image", [], "any", false, false, false, 76), "path", [], "any", false, false, false, 76), "html", null, true);
+                        echo "\" alt=\"\" /></a>
+                  ";
+                    }
+                    // line 78
+                    echo "                  <div class=\"intro-label\">
+                  </div>
+      
+                </div>
+      
+                <div class=\"post-prev-title font-alt align-center\">
+                  <a href=\"";
+                    // line 84
+                    echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
+                    echo "\">";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["obProduct"], "name", [], "any", false, false, false, 84), "html", null, true);
+                    echo "</a>
+                </div>
+      
+                <div class=\"post-prev-text align-center\">
+                  <strong>";
+                    // line 88
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["obProduct"], "preview_text", [], "any", false, false, false, 88), "html", null, true);
+                    echo "</strong>
+                  ";
+                    // line 89
+                    $context["obOffer"] = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, $context["obProduct"], "offer", [], "any", false, false, false, 89), "first", [], "method", false, false, false, 89);
+                    // line 90
+                    echo "                  ";
+                    if (twig_get_attribute($this->env, $this->source, ($context["obOffer"] ?? null), "isNotEmpty", [], "method", false, false, false, 90)) {
+                        // line 91
+                        echo "                  <span>Price: ";
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["obOffer"] ?? null), "currency", [], "any", false, false, false, 91), "html", null, true);
+                        echo " ";
+                        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["obOffer"] ?? null), "price", [], "any", false, false, false, 91), "html", null, true);
+                        echo " </span>
+                  ";
+                    }
+                    // line 93
+                    echo "                </div>
+                
+      
+                <div class=\"post-prev-more align-center\">
+                  <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
+                </div>
+      
               </div>
-
             </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 71
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <del>\$150.00</del>
-              &nbsp;
-              <strong>\$94.75</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
+              ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['obProduct'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 103
+                echo "              
+              ";
+            }
+            // line 105
+            echo "              <!-- End Post Item -->
+      
+            
+      
           </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 91
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 95
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 113
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 117
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 135
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 139
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-
-              <a href=\"";
-        // line 158
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-
-              <div class=\"intro-label\">
-                <span class=\"label label-danger bg-red\">Sale</span>
-              </div>
-
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 167
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <del>\$150.00</del>
-              &nbsp;
-              <strong>\$94.75</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 187
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 191
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 209
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 213
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 231
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 235
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 253
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 257
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 275
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 279
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 297
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 301
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"";
-        // line 319
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\"><img src=\"";
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/shop-prev-1.jpg");
-        echo "\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"";
-        // line 323
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("product");
-        echo "\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
 
         </div>
-
-        <!-- Pagination -->
-        <div class=\"pagination\">
-          <a href=\"\"><i class=\"fa fa-angle-left\"></i></a>
-          <a href=\"\" class=\"active\">1</a>
-          <a href=\"\">2</a>
-          <a href=\"\">3</a>
-          <a class=\"no-active\">...</a>
-          <a href=\"\">9</a>
-          <a href=\"\"><i class=\"fa fa-angle-right\"></i></a>
-        </div>
-        <!-- End Pagination -->
 
       </div>
-      <!-- End Content -->
+        ";
+            // line 115
+            echo "              ";
+            if ( !twig_test_empty(($context["arPaginationList"] ?? null))) {
+                // line 116
+                echo "              <nav aria-label=\"...\">
+                  <ul class=\"pagination pagination-lg\">
+                  ";
+                // line 118
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable(($context["arPaginationList"] ?? null));
+                foreach ($context['_seq'] as $context["_key"] => $context["arPagination"]) {
+                    // line 119
+                    echo "                 <a href=\"?page=";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["arPagination"], "value", [], "any", false, false, false, 119), "html", null, true);
+                    echo "\" class=\"";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["arPagination"], "class", [], "any", false, false, false, 119), "html", null, true);
+                    echo "\">";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["arPagination"], "name", [], "any", false, false, false, 119), "html", null, true);
+                    echo "</a>
+                  ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['arPagination'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 121
+                echo "                  </ul>
+              </nav>
+              ";
+            }
+            // line 124
+            echo "
+              ";
+        }
+        // line 126
+        echo "      <!-- End Content -->
 
 
     </div>
 
-  </div>
 </section>
 <!-- End Section -->
 
 
 <!-- Divider -->
 <hr class=\"mt-0 mb-0\" />
-<!-- End Divider -->
 
 
-<!-- Widgets Section -->
-<section class=\"page-section\">
+<!-- <section class=\"page-section\">
   <div class=\"container relative\">
 
     <div class=\"row multi-columns-row\">
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Cart</h5>
@@ -516,10 +274,9 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           <div class=\"widget-body\">
             <ul class=\"clearlist widget-posts\">
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"";
-        // line 385
+        // line 154
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/previews/shop-prev-4.jpg");
         echo "\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -532,12 +289,10 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"";
-        // line 400
+        // line 167
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/previews/shop-prev-4.jpg");
         echo "\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -550,7 +305,6 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
 
@@ -573,13 +327,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Tags</h5>
@@ -598,9 +350,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Text widget</h5>
@@ -609,7 +359,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
             <div class=\"widget-text clearfix\">
 
               <img src=\"";
-        // line 469
+        // line 231
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/user-avatar.png");
         echo "\" alt=\"\" width=\"70\" class=\"img-circle left img-left\">
 
@@ -621,13 +371,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Categories</h5>
@@ -668,9 +416,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Filter by price</h5>
@@ -694,13 +440,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Bestsellers</h5>
@@ -708,10 +452,9 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           <div class=\"widget-body\">
             <ul class=\"clearlist widget-posts\">
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"";
-        // line 568
+        // line 323
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/previews/shop-prev-4.jpg");
         echo "\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -731,12 +474,10 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"";
-        // line 590
+        // line 343
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/previews/shop-prev-4.jpg");
         echo "\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -753,12 +494,10 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"";
-        // line 609
+        // line 360
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("/assets/images/shop/previews/shop-prev-4.jpg");
         echo "\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -775,21 +514,18 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
     </div>
 
   </div>
-</section>
-<!-- End Widgets Section -->";
+</section> -->";
     }
 
     public function getTemplateName()
@@ -804,7 +540,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
 
     public function getDebugInfo()
     {
-        return array (  762 => 609,  740 => 590,  715 => 568,  613 => 469,  541 => 400,  523 => 385,  458 => 323,  449 => 319,  428 => 301,  419 => 297,  398 => 279,  389 => 275,  368 => 257,  359 => 253,  338 => 235,  329 => 231,  308 => 213,  299 => 209,  278 => 191,  269 => 187,  246 => 167,  232 => 158,  210 => 139,  201 => 135,  180 => 117,  171 => 113,  150 => 95,  141 => 91,  118 => 71,  105 => 63,  55 => 16,  38 => 2,  35 => 1,);
+        return array (  501 => 360,  481 => 343,  458 => 323,  363 => 231,  296 => 167,  280 => 154,  250 => 126,  246 => 124,  241 => 121,  228 => 119,  224 => 118,  220 => 116,  217 => 115,  206 => 105,  202 => 103,  187 => 93,  179 => 91,  176 => 90,  174 => 89,  170 => 88,  161 => 84,  153 => 78,  145 => 76,  143 => 75,  135 => 71,  130 => 70,  128 => 69,  124 => 67,  122 => 66,  119 => 65,  116 => 64,  113 => 62,  110 => 61,  107 => 59,  104 => 58,  102 => 57,  99 => 56,  97 => 55,  55 => 16,  38 => 2,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -844,8 +580,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
       <!-- Content -->
       <div class=\"col-sm-12\">
 
-        <!-- Shop options -->
-        <div class=\"clearfix mb-40\">
+        <!-- <div class=\"clearfix mb-40\">
 
           <div class=\"left section-text mt-10\">
             Showing 1–12 of 23 results
@@ -861,329 +596,100 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
             </form>
           </div>
 
-        </div>
-        <!-- End Shop options -->
+        </div> -->
 
         <div class=\"row multi-columns-row\">
+            {% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
 
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
+            {% set iPage = Pagination.getPageFromRequest() %}
+            {% set arPaginationList = Pagination.get(iPage, obProductList.count()) %}
+            
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-            <div class=\"post-prev-img\">
+            {# Apply pagination to product collection and get array with product items #}
+            {% set arProductList = obProductList.page(iPage, Pagination.getCountPerPage()) %}
 
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-              <div class=\"intro-label\">
-                <span class=\"label label-danger bg-red\">Sale</span>
+            {% if arProductList is not empty %}
+
+            
+            {% if obProductList.isNotEmpty() %}
+            {% for obProduct in arProductList %}
+            <div data-id=\"{{ obProduct.id }}\">
+              <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
+      
+                <div class=\"post-prev-img\">
+                  {% if obProduct.preview_image is not empty %}
+                  <a href=\"{{'product'|page}}\"><img src=\"{{ obProduct.preview_image.path }}\" alt=\"\" /></a>
+                  {% endif %}
+                  <div class=\"intro-label\">
+                  </div>
+      
+                </div>
+      
+                <div class=\"post-prev-title font-alt align-center\">
+                  <a href=\"{{'product'|page}}\">{{ obProduct.name }}</a>
+                </div>
+      
+                <div class=\"post-prev-text align-center\">
+                  <strong>{{ obProduct.preview_text }}</strong>
+                  {% set obOffer = obProduct.offer.first() %}
+                  {% if obOffer.isNotEmpty()%}
+                  <span>Price: {{ obOffer.currency }} {{ obOffer.price }} </span>
+                  {% endif %}
+                </div>
+                
+      
+                <div class=\"post-prev-more align-center\">
+                  <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
+                </div>
+      
               </div>
-
             </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <del>\$150.00</del>
-              &nbsp;
-              <strong>\$94.75</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
+              {% endfor %}
+              
+              {% endif %}
+              <!-- End Post Item -->
+      
+            
+      
           </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-
-              <div class=\"intro-label\">
-                <span class=\"label label-danger bg-red\">Sale</span>
-              </div>
-
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">G-Star Polo Applique Jersey</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <del>\$150.00</del>
-              &nbsp;
-              <strong>\$94.75</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Only & Sons Pique Polo Shirt</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$28.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Longline Long Sleeve</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$39.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
-
-          <!-- Shop Item -->
-          <div class=\"col-md-3 col-lg-3 mb-60 mb-xs-40\">
-
-            <div class=\"post-prev-img\">
-              <a href=\"{{'product'|page}}\"><img src=\"{{'/assets/images/shop/shop-prev-1.jpg'|theme}}\" alt=\"\" /></a>
-            </div>
-
-            <div class=\"post-prev-title font-alt align-center\">
-              <a href=\"{{'product'|page}}\">Polo Shirt With Floral Sleeves</a>
-            </div>
-
-            <div class=\"post-prev-text align-center\">
-              <strong>\$85.99</strong>
-            </div>
-
-            <div class=\"post-prev-more align-center\">
-              <a href=\"#\" class=\"btn btn-mod btn-gray btn-round\"><i class=\"fa fa-shopping-cart\"></i> Add to cart</a>
-            </div>
-
-          </div>
-          <!-- End Shop Item -->
 
         </div>
-
-        <!-- Pagination -->
-        <div class=\"pagination\">
-          <a href=\"\"><i class=\"fa fa-angle-left\"></i></a>
-          <a href=\"\" class=\"active\">1</a>
-          <a href=\"\">2</a>
-          <a href=\"\">3</a>
-          <a class=\"no-active\">...</a>
-          <a href=\"\">9</a>
-          <a href=\"\"><i class=\"fa fa-angle-right\"></i></a>
-        </div>
-        <!-- End Pagination -->
 
       </div>
+        {# Render pagination buttons #}
+              {% if arPaginationList is not empty %}
+              <nav aria-label=\"...\">
+                  <ul class=\"pagination pagination-lg\">
+                  {% for arPagination in arPaginationList %}
+                 <a href=\"?page={{ arPagination.value }}\" class=\"{{ arPagination.class }}\">{{ arPagination.name }}</a>
+                  {% endfor %}
+                  </ul>
+              </nav>
+              {% endif %}
+
+              {% endif %}
       <!-- End Content -->
 
 
     </div>
 
-  </div>
 </section>
 <!-- End Section -->
 
 
 <!-- Divider -->
 <hr class=\"mt-0 mb-0\" />
-<!-- End Divider -->
 
 
-<!-- Widgets Section -->
-<section class=\"page-section\">
+<!-- <section class=\"page-section\">
   <div class=\"container relative\">
 
     <div class=\"row multi-columns-row\">
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Cart</h5>
@@ -1191,7 +697,6 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           <div class=\"widget-body\">
             <ul class=\"clearlist widget-posts\">
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -1204,9 +709,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -1219,7 +722,6 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
 
@@ -1242,13 +744,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Tags</h5>
@@ -1267,9 +767,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Text widget</h5>
@@ -1287,13 +785,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Categories</h5>
@@ -1334,9 +830,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Filter by price</h5>
@@ -1360,13 +854,11 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
       <div class=\"col-sm-6 col-md-3 col-lg-3\">
 
-        <!-- Widget -->
         <div class=\"widget\">
 
           <h5 class=\"widget-title font-alt\">Bestsellers</h5>
@@ -1374,7 +866,6 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
           <div class=\"widget-body\">
             <ul class=\"clearlist widget-posts\">
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -1394,9 +885,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -1413,9 +902,7 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
-              <!-- Preview item -->
               <li class=\"clearfix\">
                 <a href=\"\"><img src=\"{{'/assets/images/shop/previews/shop-prev-4.jpg'|theme}}\" alt=\"\" class=\"widget-posts-img\" /></a>
                 <div class=\"widget-posts-descr\">
@@ -1432,20 +919,17 @@ class __TwigTemplate_a169357479f41c005621ba46c5cb818789100804dc8b37ce9ab29c067ae
                   </div>
                 </div>
               </li>
-              <!-- End Preview item -->
 
             </ul>
           </div>
 
         </div>
-        <!-- End Widget -->
 
       </div>
 
     </div>
 
   </div>
-</section>
-<!-- End Widgets Section -->", "C:\\xampp\\htdocs\\zuri/themes/zuri-theme/pages/shop.htm", "");
+</section> -->", "C:\\xampp\\htdocs\\zuri/themes/zuri-theme/pages/shop.htm", "");
     }
 }

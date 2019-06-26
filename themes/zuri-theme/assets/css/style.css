@@ -2535,7 +2535,8 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(34,34,34, .5);
+    background-color: #ffcba4;
+    /* background: rgba(34,34,34, .5); */
 }
 .bg-dark-alfa-70:before,
 .bg-dark-alfa-70 .YTPOverlay:before{
@@ -2545,7 +2546,8 @@ a.logo:hover{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(17,17,17, .7);
+    background-color: #ffcba4;
+    /* background: rgba(17,17,17, .7); */
 }
 .bg-dark-alfa-90:before,
 .bg-dark-alfa-90 .YTPOverlay:before{
@@ -4413,13 +4415,13 @@ a.blog-item-more:hover{
 }
 .pagination a:hover{
     text-decoration: none;
-    border-color: #bbb;
-    color: #444;
+    border-color: #e41919;
+    color: #e41919;
 }
 .pagination a.active,
 .pagination a.active:hover{
-    border-color: #bbb;
-    color: #444;
+    border-color: #e41919;
+    color: #e41919;
     cursor: default;
 }
 .pagination a.no-active,

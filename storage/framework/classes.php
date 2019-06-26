@@ -214,4 +214,6 @@
   'Lovata\\Shopaholic\\Classes\\Item\\OfferItem' => 'plugins/lovata/shopaholic/classes/item/OfferItem.php',
   'Lovata\\Shopaholic\\Classes\\Collection\\ProductCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\ProductCollection.php',
   'Lovata\\Shopaholic\\Classes\\Collection\\CategoryCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\CategoryCollection.php',
+  'lovata\\shopaholic\\Controllers\\offers' => 'plugins\\lovata\\shopaholic\\controllers\\offers.php',
+  'Lovata\\Shopaholic\\Classes\\Collection\\OfferCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\OfferCollection.php',
 );
